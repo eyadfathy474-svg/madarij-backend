@@ -1,28 +1,24 @@
 {
-    "name": "madarij-center",
-    "version": "1.0.0",
-    "description": "مركز مدارج لتعليم القرآن الكريم - Unified Deployment",
-    "main": "server/index.js",
-    "scripts": {
-        "postinstall": "npm run install:all",
-        "install:all": "cd client && npm install && cd ../server && npm install",
-        "build": "npm run build:client",
-        "build:client": "cd client && npm run build",
-        "build:all": "npm run build:client",
-        "start": "cd server && NODE_ENV=production node index.js",
-        "dev:server": "cd server && npm run dev",
-        "dev:client": "cd client && npm run dev",
-        "dev": "npm run dev:server"
-    },
-    "dependencies": {
-        "bcryptjs": "^3.0.3",
-        "cors": "^2.8.5",
-        "dotenv": "^17.2.3",
-        "express": "^5.2.1",
-        "express-validator": "^7.3.1",
-        "jsonwebtoken": "^9.0.3",
-        "mongoose": "^9.1.1"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "seed": "node seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.1"
+  }
 }
